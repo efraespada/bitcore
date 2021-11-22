@@ -78,7 +78,7 @@ module.exports = {
   isNaturalNumber: function isNaturalNumber(value) {
     return typeof value === 'number' &&
       isFinite(value) &&
-      Math.floor(value) === value &&
+      Math.floor(value).toString() === value.toString() &&
       value >= 0;
   }
 };
